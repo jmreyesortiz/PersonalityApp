@@ -17,6 +17,7 @@ public class Answers {
         // instantiation prevention!!
     }
 
+    //sets the answer
     private void setAnswer(int trait, int answer){
         AnswerArray[trait] = answer;
     }
