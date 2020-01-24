@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Results"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <com.github.mikephil.charting.charts.RadarChart
+            android:id="@+id/RADAR_CHART"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="400dp"></com.github.mikephil.charting.charts.RadarChart>
+
+
+
+
+        <TextView
+            android:id="@+id/TEXT_VIEW_EXTRAVERSION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Extroversion"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/HORIZONTAL_BAR_CHART_1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+        </com.github.mikephil.charting.charts.HorizontalBarChart>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TEXT_VIEW_EXTROVERSION_DESCRIPTION"
+            android:textSize="16sp"
+
+            />
+        <TextView
+            android:id="@+id/TEXT_VIEW_AGREEABLENESS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Agreeableness"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/HORIZONTAL_BAR_CHART_2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+        </com.github.mikephil.charting.charts.HorizontalBarChart>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/TEXT_VIEW_AGREEABLENESS_DESCRIPTION"
+
+            />
+
+        <TextView
+            android:id="@+id/TEXT_VIEW_CONSCIENTIOUSNESS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Conscientiousness"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/HORIZONTAL_BAR_CHART_3"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+        </com.github.mikephil.charting.charts.HorizontalBarChart>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TEXT_VIEW_CONSCIENTIOUSNESS_DESCRIPTION"
+
+            />
+
+        <TextView
+            android:id="@+id/TEXT_VIEW_Neuroticism"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Neuroticism"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/HORIZONTAL_BAR_CHART_4"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+        </com.github.mikephil.charting.charts.HorizontalBarChart>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TEXT_VIEW_NEUROTICISM_DESCRIPTION"
+
+
+
+            />
+        <TextView
+            android:id="@+id/TEXT_VIEW_Openness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Openness"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/HORIZONTAL_BAR_CHART_5"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+        </com.github.mikephil.charting.charts.HorizontalBarChart>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TEXT_VIEW_OPENNESS_DESCRIPTION"
+            android:layout_marginBottom="20dp"
+
+
+            />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

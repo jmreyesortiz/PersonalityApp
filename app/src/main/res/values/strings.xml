@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Personality</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="Results"><u>Results</u></string>
+    <string name="Extroversion">Extroversion</string>
+    <string name="Agreeableness">Agreeableness</string>
+    <string name="Conscientiousness">Conscientiousness</string>
+    <string name="Neuroticism">Neuroticism</string>
+    <string name="Openness">Openness</string>
+
+    <string name="Extroversion_Desc">Low scorers tend to be shutins.\n\nHigh scorers tend to be more outgoing and social.</string>
+    <string name="Agreeableness_Desc">Low scorers tend to be more critical and aggressive.\n\nHigh scorers are more friendly and optimistic.</string>
+    <string name="Conscientiousness_Desc">Low scorers are more impulsive and disorganized.\n\nHigh scorers are more careful and diligent.</string>
+    <string name="Neuroticism_Desc">Low scorers are more emotionally stable.\n\n High scorers are less emotionally stable.</string>
+    <string name="Openness_Desc">Low scorers tend to be traditional and conventional.\n\nHigh scorers tend to like novelty, fantasy, and are more likely to be intellectually curious.</string>
+
+    <!-- strings.xml -->
+    <string name="personality">
+        Personality App</string>
+
+
+    <string name="app_title"><u>Personality App</u></string>
+    <string name="Instructions">
+        Intro: The Big Five comes in many varieties, and it\'s not associated with any particular test. This test uses the Big-Five Factor Markers from the International Personality Item Pool, developed by Goldberg (1992), and the "mini-ipip" test developed by Donnellan, M. Brent, et al.(2006).\u000D\n\u000D\nAnswer honestly in how you see yourself NOW, and NOT in the future. Answers are not correct or incorrect. No personality profile is necessarily less or more desirable in relation to another one\u000D\n\u000D\nParticipation: Your use of this tool should be for educational or entertainment purposes only. The results of this test are not psychological or psychiatric advice of any kind and come with no guarantee of accuracy or fitness for a particular purpose.
+    </string>
+
+    <integer name="version_number">
+        2
+    </integer>
+
+    <string name="version">1.1</string>
+
+    <string name="start">Start</string>
+</resources>
