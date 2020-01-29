@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.ArrayList;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private String [] questionText = new String[30];
     private int[] AnswerArray = new int[20];
     private AdView mAdView;
+    String bannerUnited2;
 
 
     @Override
@@ -34,13 +36,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //ADS
-        mAdView = findViewById(R.id.adView2);
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
 
-        //Layout Creation
+        //setAdView();
         LinearLayout mLinearLayout = findViewById(R.id.LinearLayScroll);
         setRadioGroups();
         createLayout(mLinearLayout,AnswerArray);
+
+
+
+    }
+
+    public void setAdView(){
+
+        bannerUnited2 = "your banner id 2";
+        MobileAds.initialize(this, bannerUnited2);
+        mAdView = findViewById(R.id.adView2);
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        mAdView.loadAd(adRequest);
 
     }
 
@@ -161,6 +173,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 
 
 

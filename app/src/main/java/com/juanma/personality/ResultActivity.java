@@ -23,6 +23,7 @@ import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import com.github.mikephil.charting.formatter.ValueFormatter;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.ArrayList;
 
@@ -44,7 +45,7 @@ public class ResultActivity extends AppCompatActivity {
     private TextView mNeuroticismTextview;
 
     private AdView mAdView;
-
+    private String bannerAdUnit3;
 
 
     @Override
@@ -53,6 +54,11 @@ public class ResultActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        ;  //Second parameter is Id for Adview
+
+        //setAdView();
+
+
         mRadarChart = findViewById(R.id.RADAR_CHART);
         mHorizontalBarChart1 = findViewById(R.id.HORIZONTAL_BAR_CHART_1);
         mHorizontalBarChart2 = findViewById(R.id.HORIZONTAL_BAR_CHART_2);
@@ -68,9 +74,19 @@ public class ResultActivity extends AppCompatActivity {
         setHorizontalChart(mHorizontalBarChart4,3);
         setHorizontalChart(mHorizontalBarChart5,4);
         setTexTViews();
+
+
+
+
+    }
+
+    public void setAdView(){
+
+        bannerAdUnit3 = "your banner id";
+        MobileAds.initialize(this, bannerAdUnit3);
         mAdView = findViewById(R.id.adView3);
         AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
-
+        mAdView.loadAd(adRequest);
 
     }
 
@@ -161,6 +177,7 @@ public class ResultActivity extends AppCompatActivity {
         Description description = new Description();;
         description.setEnabled(false);
         mHorizontalBarChart.setDescription(description);
+
         //DISABLING TOUCH INTERACTIONS!
         mHorizontalBarChart.setClickable(false);
         mHorizontalBarChart.setDragEnabled(false);
@@ -182,7 +199,6 @@ public class ResultActivity extends AppCompatActivity {
 
         //COLORS
         int color = getResources().getColor(R.color.colorPrimaryDark);
-        // COLORS
 
         //GETTING RID OF STUFF
         radarDataSet.setLabel(""); //UNNECESSARY LABEL
