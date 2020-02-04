@@ -80,7 +80,7 @@ public class ResultActivity extends AppCompatActivity {
 
     }
 
-    public void setAdView(){
+    private void setAdView(){
 
         bannerAdUnit3 = "your banner id";
         MobileAds.initialize(this, bannerAdUnit3);
@@ -126,7 +126,7 @@ public class ResultActivity extends AppCompatActivity {
         return datavalues;
     }
 
-    public void setHorizontalChart(HorizontalBarChart mHorizontalBarChart, int trait){
+    private void setHorizontalChart(HorizontalBarChart mHorizontalBarChart, int trait){
 
         ArrayList<BarEntry> barEntries = new ArrayList<>();
         Answers answers = Answers.getInstance();
@@ -191,7 +191,7 @@ public class ResultActivity extends AppCompatActivity {
         mHorizontalBarChart.setTouchEnabled(false);
     }
 
-    public void setRadarChart(RadarChart mRadarChart){
+    private void setRadarChart(RadarChart mRadarChart){
 
         String[] labels = {"Extroversion","Agreeableness", "Conscientiousness", "Neuroticism", "Openness"};
         RadarDataSet radarDataSet = new RadarDataSet(mRadarEntries(),"Personality");
@@ -263,7 +263,7 @@ public class ResultActivity extends AppCompatActivity {
 
     }
 
-    public void setTexTViews(){
+    private void setTexTViews(){
         mAgreeablenessTextView = findViewById(R.id.TEXT_VIEW_AGREEABLENESS_DESCRIPTION);
         mConscientiousnessTextView = findViewById(R.id.TEXT_VIEW_CONSCIENTIOUSNESS_DESCRIPTION);
         mExtroversionTextView = findViewById(R.id.TEXT_VIEW_EXTROVERSION_DESCRIPTION);
@@ -285,7 +285,7 @@ public class ResultActivity extends AppCompatActivity {
 
     }
 
-    public void setDescription(TextView textView, int trait, String[] traitarray){
+    private void setDescription(TextView textView, int trait, String[] traitarray){
 
 
         Answers answers = Answers.getInstance();

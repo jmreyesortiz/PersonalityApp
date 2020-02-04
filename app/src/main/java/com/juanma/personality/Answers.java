@@ -14,7 +14,7 @@ public class Answers {
     }
 
     private Answers(){
-        // instantiation prevention!!
+
     }
 
     //sets the answer

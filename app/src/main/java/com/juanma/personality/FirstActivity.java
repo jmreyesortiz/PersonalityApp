@@ -27,7 +27,7 @@ public class FirstActivity extends AppCompatActivity {
 
     }
 
-    public void setAdView(){
+    private void setAdView(){
 
         bannerAdUnit1 = "your banner id";
         MobileAds.initialize(this, bannerAdUnit1);  //Second parameter is Id for Adview
@@ -38,7 +38,7 @@ public class FirstActivity extends AppCompatActivity {
     }
 
 
-    public void setButton(Button button){
+    private void setButton(Button button){
 
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

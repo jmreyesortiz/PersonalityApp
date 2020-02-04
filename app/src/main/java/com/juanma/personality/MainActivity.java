@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void setAdView(){
+    private void setAdView(){
 
         bannerUnited2 = "your banner id 2";
         MobileAds.initialize(this, bannerUnited2);
@@ -94,12 +94,13 @@ public class MainActivity extends AppCompatActivity {
         return questionText[id];
     }
 
-    public void createLayout(final LinearLayout mLinearLayout, final int AnswerArray[] ){
+    private void createLayout(final LinearLayout mLinearLayout, final int AnswerArray[] ){
 
         //Button
         final Button submitButton = new Button(this);
         submitButton.setText("Submit");
         submitButton.setTextSize(16);
+
         //Button Parameters
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.MATCH_PARENT);
@@ -108,18 +109,19 @@ public class MainActivity extends AppCompatActivity {
         int color = getResources().getColor(R.color.colorPrimary);
         submitButton.setBackgroundColor(color);
         submitButton.setTextColor(Color.WHITE);
-        //Answers
 
+        //Answers
         final Answers FinalAnswer = Answers.getInstance(); // Getting the singleton
 
         //RadioButton Creation
-        for (int i =0; i<radioGroups.size(); i++) {
+        for (int i =0; i< radioGroups.size(); i++) {
 
             //Setting Question Text
             TextView questionTextView = new TextView(this);
             questionTextView.setText(i + 1 + " " + getQuestionText(i));
             questionTextView.setTypeface(null, Typeface.BOLD);
             questionTextView.setTextSize(16);
+
             //RadioGroup Question
             final  RadioGroup question = getRadioGroups(i);
             mLinearLayout.addView(questionTextView);
