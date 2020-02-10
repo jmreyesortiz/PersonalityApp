@@ -34,5 +34,5 @@ Discover about your personality and learn about yourself by using the mini ipip 
 # Libraries / Tools #
 
 * Mini IPIP personality inventory : https://www.ncbi.nlm.nih.gov/pubmed/16768595
-* Admob
 * MPA Android Chart: https://github.com/PhilJay/MPAndroidChart
+* Admob
